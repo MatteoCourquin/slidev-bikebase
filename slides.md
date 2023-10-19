@@ -1,9 +1,9 @@
 ---
-background: https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 class: text-center
 lineNumbers: false
 transition: slide-left
 title: Bike Base • Library
+favicon: './favicon.png'
 mdc: true
 fonts:
   sans: 'Helvetica Neue,Robot'
@@ -40,31 +40,6 @@ Les développeurs avaient besoin d'un accès facile à des données complètes e
 
 Filtrer les motos par marque, puissance, année, et conformité à la norme A2 était un défi, nécessitant un outil puissant et flexible.
 
-- **La Nécessité de la Personnalisation**
-
-Les projets variaient, nécessitant des données personnalisées triées et filtrées selon des critères spécifiques.
-
----
-transition: fade-out
----
-
-## Problématique Résolue • La Solution Proposée
-
-<br>
-<hr>
-<br>
-
-- Données Complètes et Structurées
-
-La bibliothèque fournit un accès facile à une vaste base de données de motos, complètement organisée et structurée.
-
-- Filtrage Puissant et Flexible
-
-Les développeurs peuvent filtrer les motos par marque, puissance, année et conformité à la norme A2 grâce à des fonctions simples et flexibles.
-
-- Personnalisation Selon les Besoins
-
-La bibliothèque offre des fonctions permettant aux développeurs de personnaliser les données selon leurs besoins spécifiques pour différents projets.
 
 ---
 transition: fade-out
@@ -133,22 +108,24 @@ transition: fade-out
 <hr>
 <br>
 
-- Installation via npm:
+- Installation via npm & yarn:
 
 ```bash
 npm install bikebase
+```
+```bash
+yarn add bikebase
 ```
 
 - Import into your project:
 
 ```javascript
-const bikebase = require('bikebase');
+import { default as bikebase } from 'bikebase'
 ```
 
 - Using the functions:
 
 ```javascript
-// Examples of using the library's functions
 const allBikes = bikebase.getAllBikes();
 const a2Bikes = bikebase.getAllBikesA2();
 const yamahaBikes = bikebase.getBikesByBrand('yamaha');
@@ -200,7 +177,7 @@ La méthode `getBikesByPower(power_hp, tolerance)` est testée avec différentes
 La couverture complète des tests unitaires assure la fiabilité de chaque fonctionnalité de la bibliothèque.
 
 ---
-transition: fade-out
+transition: slide-up
 ---
 
 ## Roadmap
@@ -211,13 +188,11 @@ transition: fade-out
 
 La bibliothèque bikebase est en constante évolution, et voici un aperçu des fonctionnalités et améliorations prévues pour les prochaines versions :
 
-- Version 1.1.0 (À venir)
+- Version 1.1.3 (actuelle)
 
 **Fonction de recherche avancée :** Ajout d'une fonction de recherche avancée permettant aux utilisateurs de filtrer les motos par plusieurs critères, tels que la puissance, l'année de lancement et le type de moto.
 
 **Optimisation des performances :** Optimisation des requêtes et des algorithmes pour améliorer la vitesse et l'efficacité de la bibliothèque, garantissant ainsi une expérience utilisateur plus fluide.
-
-**Support multilingue :** Ajout de la prise en charge de plusieurs langues pour les messages d'erreur et les retours utilisateur, rendant la bibliothèque plus accessible à un public international.
 
 ---
 transition: fade-out
@@ -235,6 +210,25 @@ transition: fade-out
 
 **Filtrage avancé :** Ajout de fonctionnalités de filtrage avancées, y compris la capacité de trier les résultats par différents critères tels que la popularité, le prix et les évaluations des utilisateurs.
 
-**Compatibilité avec d'autres plateformes :** Développement de versions de la bibliothèque compatibles avec d'autres plateformes, y compris les applications mobiles iOS et Android, pour offrir une expérience utilisateur cohérente sur toutes les plateformes.
+**Compatibilité avec d'autres plateformes :** Développement de versions de la bibliothèque compatibles avec d'autres plateformes, pour offrir une expérience utilisateur cohérente sur toutes les plateformes.
+
+<br>
+<hr>
+<br>
 
 Cette roadmap est sujette à modifications et sera mise à jour régulièrement en fonction des retours de la communauté et des besoins des utilisateurs.
+
+---
+transition: fade-out
+class: text-center
+lineNumbers: false
+mdc: true
+---
+
+# Merci pour votre écoute !!
+
+<br>
+<hr>
+<br>
+
+[Tester le projet](https://codepen.io/Louis-Perrenot/pen/RwEXXYy?editors=1012)
